@@ -1,0 +1,32 @@
+
+//  ap series and its sum 
+#include <stdio.h>
+int main(){
+
+int a, i,d, n, s=0,tn;
+printf("Enter the first term \n");
+scanf("%d", &a);
+
+printf("Enter the number of terms in ap series\n");
+scanf("%d", &n);
+printf("Enter the commom difference \n");
+scanf("%d", &d);
+
+tn = (a+(n-1)*d);
+
+s = (n*(2*a+(n-1)*d))/2;
+printf("last term of ap series is %d", tn);
+
+printf("Sum of ap series is ");
+
+for(i=a; i<=tn; i=i+d ){
+    if(i!=tn){
+        printf("%d+", i);
+    }
+    else{
+        printf("%d = %d", i, s);
+    }
+
+}
+return 0;
+}
