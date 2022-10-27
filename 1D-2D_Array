@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+    // One Dimensional array 
+    
+    int arr[50],i,num;
+    printf("Enter the elements in an array\n");
+    scanf("%d",&num);
+    
+    printf("Enter the elements in the array \n");
+    
+    for(i=0; i<num; i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("The array is \n");
+    for(i=0; i<num; i++){
+        printf("arr[%d]=%d\n",i,arr[i]);
+    }
+    // Two dimensional array 
+    
+    int arr[4][4],i,j;
+    printf("Enter the elements os array \n");
+    for(i=0;i<4; i++){
+        for(j=0; j<4; j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("Entered array is \n");
+    for(i=0; i<4; i++){
+        printf("\n");
+        for(j=0; j<4; j++){
+            printf("%d\t",arr[i][j]);
+        }
+    }
+    
+    
+    
+
+    return 0;
+}
