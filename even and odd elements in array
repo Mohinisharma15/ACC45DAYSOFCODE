@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+// Write a c program to separate even and odd elements in the array
+
+int main()
+{
+    int arr[50],i,num;
+    printf("Enter the number of elements in an array\n");
+    scanf("%d",&num);
+    
+    printf("Enter the elements in the array\n");
+    for(i=0; i<num; i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("The even elements of the array is \n");
+    for(i=0; i<num; i++){
+       
+        if(arr[i]%2==0){
+            printf("arr[%d]=%d\n",i,arr[i]);
+        }
+        
+    }
+    printf("The odd elements in the array\n");
+        for(i=0; i<num; i++){
+       
+         if(arr[i]%2!=0){
+            printf("arr[%d]=%d\n",i,arr[i]);
+        }
+    }
+
+    return 0;
+}
