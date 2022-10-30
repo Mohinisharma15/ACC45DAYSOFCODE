@@ -1,0 +1,40 @@
+
+// C program to insert an element in the array
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[50],i,value,posi,num;
+    
+    printf("Enter the number of elements in the array \n");
+    
+    scanf("%d",&num);
+    
+    printf("Enter the elements of the array\n");
+    
+    for(i=0; i<num; i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("Please Enter the position where you want to insert an element \n ");
+    
+    scanf("%d",&posi);
+    
+    printf("Please enter the value of element \n");
+    
+    scanf("%d",&value);
+    
+    for(i=num-1; i>=posi-1; i--){
+        arr[i+1]=arr[i];
+        arr[posi-1]=value;
+    }
+    printf("Resultant array is \n");
+    
+    for(i=0; i<=num; i++){
+        printf("arr[%d]=%d\n",i,arr[i]);
+    }
+    
+    
+    return 0;
+}
