@@ -1,0 +1,29 @@
+
+// Tribonacci series
+
+#include <stdio.h>
+
+
+int main(){
+   int n,t1,t2,t3,nextterm,i;
+   printf("Enter the number of terms \n");
+   scanf("%d",&n);
+
+   t1=0;
+   t2=0; 
+   t3=1;
+   nextterm=t1+t2+t3;
+   
+   printf("Tribonacci series is %d, %d,%d,",t1,t2,t3);
+   
+   for(i=4; i<=n; i++){
+    printf("%d,",nextterm);
+    t1=t2; t2=t3;
+    t3=nextterm;
+    nextterm=t1+t2+t3;
+    
+   }
+
+   
+   return 0;
+}
