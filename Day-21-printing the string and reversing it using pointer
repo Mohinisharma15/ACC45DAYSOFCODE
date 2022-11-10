@@ -1,0 +1,34 @@
+
+//Printing the string and also Reversing the string using pointer 
+
+
+#include <stdio.h>
+
+int main()
+{ 
+    char arr[50],*p;
+    int i,num;
+    p=&arr[0];
+    printf("Enter the number of elements in the asrray \n");
+    
+    scanf("%d",&num);
+    
+    printf("Enter the characters of the array \n");
+    
+    for(i=0; i<num; i++){
+        scanf("%c",(p+i));
+    }
+    printf("Printing the string\n");
+    
+    for(i=0; i<num; i++){
+        printf("%c",*(p+i));
+    }
+    
+    printf("\nAfter reversing the array \n");
+    
+    for(i=num-1; i>=0; i--){
+        printf("%c",*(p+i));
+    }
+ 
+
+    return 0;
