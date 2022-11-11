@@ -1,0 +1,53 @@
+
+#include <stdio.h>
+
+// With arguments aND WITHOUT RETURN value
+
+/*
+void add(int a,int b){
+    int k;
+    k=a+b;
+    printf("Addition of a and b is %d",k);
+}
+
+// Without argument and Without return value 
+ void name(){
+     printf("Mohini Sharma\n");
+ }
+
+// With Argument and With return value
+int add(int a, int b){
+    return a+b;
+}
+*/
+
+// Without arguments and with return value;
+int takenumber(){
+    int i;
+    printf("Enter the number \n");
+    scanf("%d",&i);
+    return i;
+}
+int main()
+{
+/*    int a,b,c;
+    printf("Enter the value of a \n");
+    scanf("%d",&a);
+    printf("Enter the value of b \n");
+    scanf("%d",&b);
+    add(a,b);
+
+
+printf("My name is :");
+name();
+
+c=add(a,b);
+printf("The addition of a and b is %d",c);
+*/
+int i;
+i=takenumber();
+printf("%d",i);
+
+    
+    return 0;
+}
