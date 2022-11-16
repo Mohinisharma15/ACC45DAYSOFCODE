@@ -1,0 +1,55 @@
+
+
+int main(){
+
+int arr[25],i,num,sum=0,rem=0;
+
+printf("Enter the number of element in the array \n");
+
+scanf("%d",&num);
+
+printf("Enter the element of the aarray \n");
+
+for(i=0; i<num; i++){
+    scanf("%d",&arr[i]);
+}
+
+printf("The sum of the array is \n");
+
+for(i=0; i<num; i++){
+    sum=sum+arr[i];
+}
+printf("%d\n",sum);
+
+
+printf("The remainder is \n");
+
+for(i=0; i<num; i++){
+    rem=sum%arr[i];
+    printf("%d ",rem);
+}
+
+
+// Question 3
+
+int arr[25],i,num,sum=0;
+
+printf("Enter the number of element in the array\n");
+
+scanf("%d",&num);
+
+printf("Enter the elements of the array\n");
+
+for(i=0; i<num; i++){
+    scanf("%d",&arr[i]);
+}
+for(i=0; i<num; i++){
+    if(arr[i]>=1 && arr[i]<=5 ){
+        sum=sum+i;
+    }
+}
+printf("%d",sum);
+
+    return 0;
+
+}
