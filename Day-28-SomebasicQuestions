@@ -1,0 +1,83 @@
+
+// Some basic questions 
+
+#include <stdio.h>
+
+int main()
+{
+    
+// Question 1
+
+int piece;
+
+printf("Enter the number of pieces in the choclate \n");
+
+scanf("%d",&piece);
+
+if(piece%2==0){
+    printf("Yes it can be divided into pieces ");
+}
+else{
+    printf("No it can't be divided into pieces ");
+}
+
+// Question 2
+
+int x,y;
+
+printf("Enter the amount of water present in the tank \n");
+
+scanf("%d",&x);
+
+printf("Enter how many amount of water your bottle can hold \n");
+
+scanf("%d",&y);
+
+if(x%y==0){
+   printf("You need %d bottles ",(x/y));
+
+}
+else{
+    printf("You need %d Bottles ",(x/y)+1);
+}
+
+
+
+
+// Question 3
+
+int arr[50],elements,num,i,count=0;
+
+printf("Enter the number of elements present in the array\n");
+
+scanf("%d",&num);
+
+printf("Enter the minimum elements you want that should be divisible of 7\n");
+
+scanf("%d",&elements);
+
+printf("Enter the elements of the array \n");
+
+for(i=0; i<num; i++){
+    printf("arr[%d] = ",i);
+    scanf("%d",&arr[i]);
+}
+
+for(i=0; i<num; i++){
+    if(arr[i]%7==0){
+        count++;
+    }
+
+}
+
+if(elements==count){
+    printf("Yes ");
+}
+else{
+    printf("No");
+}
+    return 0;
+
+}
+
+    
