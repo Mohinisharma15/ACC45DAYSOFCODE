@@ -1,0 +1,66 @@
+
+// Questions on if else 
+
+#include <stdio.h>
+
+int main()
+{
+    
+// Question 1
+
+int x,y;
+printf("Enter the cost of iphone \n");
+scanf("%d",&x);
+
+printf("Enter the amount of savings you have \n");
+scanf("%d",&y);
+
+if(x>=y){
+    printf("No");
+}
+else{
+    printf("Yes");
+}
+
+
+int x,y,n;
+printf("Enter the cost of normal burger \n");
+scanf("%d",&x);
+
+printf("Enter the cost of medium burger \n");
+scanf("%d",&y);
+
+printf("Enter the amount of savings you have \n");
+scanf("%d",&n);
+
+if((x+y)<=n){
+    printf("You can buy both ");
+}
+if((x+y)>n){
+    if(x<=n && y>n){
+        printf("You can buy a normal burger ");
+    }
+    else{
+        printf("You can buy a medium burger ");
+    }
+}
+
+
+int x,i,sum=0;
+printf("Enter the value of x\n");
+scanf("%d",&x);
+
+for(i=1; i<=x; i++){
+    if(x%i==0){
+        sum = sum+i;
+
+    }
+}
+
+printf("The sum of all divisors is %d",sum);
+
+
+    
+
+    return 0;
+}
