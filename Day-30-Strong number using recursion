@@ -1,0 +1,37 @@
+
+// Strong number by recursion 
+
+#include <stdio.h>
+int fact(m){
+    if(m==0 || m==1){
+        return 1;
+    }
+    else{
+        return m*fact(m-1);
+    }
+}
+int sum(int m){
+    if(m<10){
+        return m;
+    }
+    else{
+        return fact(m%10)+sum(m/10);
+    }
+}
+int main(){
+    int m ;
+    printf("Enter the number \n");
+    scanf("%d",&m);
+
+    int c=sum(m);
+    printf("%d\n",c);
+
+if(m==c){
+    printf("Strong number ");
+}
+else{
+    printf("Not a strong number ");
+}
+    return 0;
+
+}
