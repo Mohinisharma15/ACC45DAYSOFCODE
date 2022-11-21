@@ -1,0 +1,106 @@
+
+// Questions on arrays
+
+
+#include <stdio.h>
+
+   int func(int n){
+      if(n<0){
+         return 1;
+      }
+      else{
+         return 0;
+      }
+   }
+   
+
+int main()
+{
+ 
+// Question 2
+
+int n;
+printf("Enter a number \n");
+scanf("%d",&n);
+
+printf("%d",func(n));
+
+
+// Question 3
+
+float x,m,y,n,z;
+float a,b;
+printf("Enter the cost of diesel \n");
+scanf("%f",&x);
+
+printf("Enter the cost of petrol\n ");
+scanf("%f",&y);
+
+printf("The average of diesel car is \n");
+scanf("%f",&m);
+
+printf("Enter the average of petrol car \n");
+scanf("%f",&n);
+
+printf("Enter the distance you want to travel \n");
+scanf("%f",&z);
+
+a= (m/x);
+b=(n/y);
+
+if(a>b){
+   printf("Diesel");
+}
+else if(a<b){
+   printf("Petrol");
+}
+else{
+   printf("Any");
+}
+
+
+
+// Question 4
+int m,rem,count=0;
+printf("Enter the number \n");
+scanf("%d",&m);
+
+while(m!=0){
+   rem=m%10;
+   count++;
+   m=m/10;
+
+}
+printf("%d",count);
+
+
+
+// Question 1
+    
+int n,x,m,count=0;
+printf("Enter the number of gifts \n");
+scanf("%d",&n);
+ printf("Enter the code of your fav toy\n");
+   scanf("%d",&x);
+
+printf("Enter the numbers\n");
+for( int i=1; i<=n; i++){
+   scanf("%d",&m);
+   if(m==x){
+           count++;
+       }
+}
+   
+   
+   
+if(count>=1){
+    printf("Yes");
+}
+else{
+    printf("No");
+}
+
+
+
+   return 0;
+}
