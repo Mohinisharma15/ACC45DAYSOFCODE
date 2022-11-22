@@ -1,0 +1,115 @@
+
+// Questions on Array
+
+#include <stdio.h>
+
+
+// Question 1
+
+int main(){
+    
+/*
+int arr[50],num,count1=0,count=0,i;
+
+printf("Enter the number of element in the array \n");
+scanf("%d",&num);
+
+printf("Please enter the elements in 0 and 1\n");
+for(i=0; i<num;i++){
+   scanf("%d",&arr[i]);
+}
+
+for(i=0; i<num; i++){
+   if(arr[i]==0){
+      count++;
+   }
+   else{
+      count1++;
+   }
+}
+
+printf("The number of 0s are %d\n",count);
+printf("The number of 1s are %d",count1);
+
+
+// Question 2
+
+
+int arr[50],num,i;
+printf("Enter the number of element in the array \n");
+scanf("%d",&num);
+
+printf("Please enter the elements \n");
+for(i=0; i<num;i++){
+   scanf("%d",&arr[i]);
+}
+for(i=0; i<num; i++){
+   if(arr[i]<0){
+      arr[i]=0;
+      
+   }
+   printf("%d  ",arr[i]);
+}
+*/
+// Question 3
+
+int arr[50],num,i,large=0,fact=1;
+printf("Enter the number of element in the array \n");
+scanf("%d",&num);
+
+printf("Please enter the elements in 0 and 1\n");
+for(i=0; i<num;i++){
+   scanf("%d",&arr[i]);
+   large=arr[0];
+}
+for(i=0; i<num; i++){
+   if(arr[i]>large){
+      large=arr[i];
+   }
+}
+for(i=1; i<=large; i++){
+   fact=fact*i;
+
+}
+printf("%d",fact);
+
+
+
+// Question 4
+
+/*
+int arr[50],num,i,a,j,k;
+printf("Enter the number of element in the array \n");
+scanf("%d",&num);
+printf("Enter a\n");
+   scanf("%d",&a);
+
+
+printf("Please enter the elements in 0 and 1\n");
+for(i=0; i<num;i++){
+   scanf("%d",&arr[i]);
+   
+}
+for(i=0; i<num; i++){
+   for(j=i+1; j<num; j++){
+      if(arr[i]>arr[j]){
+         k=arr[i];
+         arr[i]=arr[j];
+         arr[j]=k;
+      
+   
+      }
+   }
+   
+}
+
+for(j=0; j<num; j++){
+   if(a==j){
+      printf("%d",arr[a-1]);
+   }
+}
+
+*/
+
+   return 0;
+}
