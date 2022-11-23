@@ -1,0 +1,49 @@
+
+// Printing array by recursion and reversing it 
+
+#include <stdio.h>
+
+void printarray(int arr[],int start,int len){
+    if(start>=len){
+        return ;
+    }
+    else{
+        printf("%d ",arr[start]);
+        printarray(arr,start+1,len);
+    }
+}
+
+
+void printarray1(int arr[],int start,int len){
+    if(start>=len){
+        return ;
+    }
+    else{
+        printf("%d ",arr[start+len-1]);
+        printarray1(arr,start,len-1);
+    }
+}
+
+    
+ 
+ 
+int main()
+{
+   int arr[50],start,len,i;
+    printf("Enter the size of the array\n");
+    scanf("%d",&len);
+    
+    printf("Enter the elements of the array\n");
+    for(i=0; i<len; i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    printarray(arr,0,len);
+    
+    printf("\n");
+    
+    printarray1(arr,0,len);
+
+
+    return 0;
+}
