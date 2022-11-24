@@ -1,0 +1,45 @@
+
+// Questions on loops
+
+#include <stdio.h>
+
+int main()
+{
+ 
+int x,y,z;
+printf("Enter your weight \n");
+scanf("%d",&x);
+
+printf("Enter the minimum weight \n");
+scanf("%d",&y);
+
+printf("Enter the maximum weight \n");
+scanf("%d",&z);
+
+if(x>=y && x<=z){
+   printf("Fit");
+}
+else if(x<y){
+   printf("You are underweight ");
+}
+
+else{
+   printf("You are overweight ");
+}
+
+
+
+int rem,num,rev=0;
+printf("Enter the number \n");
+scanf("%d",&num);
+
+while(num!=0){
+   rem=num%10;
+   rev=(rev*10)+rem;
+   num=num/10;
+}
+printf("The reversed number is %d",rev);
+
+
+    return 0;
+}
