@@ -1,0 +1,94 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+// Question 1
+
+
+float x,y;
+printf("enter the minimum height \n");
+scanf("%f",&x);
+
+printf("Enter your height \n");
+scanf("%f",&y);
+
+if(y>=x){
+   printf("You can ride ");
+}
+else{
+   printf("No you cant ride");
+}
+
+
+
+// Question 2
+
+int x,y,z;
+printf("Enter the value of x\n");
+scanf("%d",&x);
+
+printf("Enter the value of y\n");
+scanf("%d",&y);
+
+printf("Enter the value of z\n");
+scanf("%d",&z);
+
+if((x>=y && x<=z) || (x<=y && x>=z)){
+   printf("%d",x);
+}
+else if ((y>=x &&y<=z ) || (y<=x && y>=z)){
+   printf("%d",y);
+}
+else{
+   printf("%d",z);
+}
+
+
+// Question 3
+
+
+int arr[50],num,sum=0,i;
+printf("Enter the number of elements in the array \n");
+scanf("%d",&num);
+
+printf("Enter the elements in the array \n");
+for(i=0; i<num; i++){
+   scanf("%d",&arr[i]);
+}
+for(i=0; i<num; i++){
+   if(arr[i]<=0){
+      sum=sum+arr[i];
+   }
+}
+
+printf("The sum of negative elements in the array is %d",sum);
+
+
+// Question 4
+
+int arr[50],num,sum=0,i,large=0,small=0;
+printf("Enter the number of elements in the array \n");
+scanf("%d",&num);
+
+printf("Enter the elements in the array \n");
+for(i=0; i<num; i++){
+   scanf("%d",&arr[i]);
+   large=arr[0];
+   small=arr[0];
+}
+for(i=1; i<num; i++){
+   if(arr[i]>large){
+      large=arr[i];
+
+   }
+   if(arr[i]<small){
+      small=arr[i];
+   }
+}
+printf("The sum is %d",large+small);
+
+
+   return 0;
+}
