@@ -1,0 +1,17 @@
+
+Sum of series 14+24+44+74+114
+
+#include <stdio.h>
+
+int n,arr[100],i,sum=0;
+printf("Enter the value of n \n");
+scanf("%d",&n);
+
+arr[0]=10;
+for(i=1; i<n; i++){
+   arr[i]=arr[i-1]+10*i;
+}
+for(i=0; i<n; i++){
+   sum=sum+(arr[i]+4);
+}
+printf("The sum is %d",sum);
