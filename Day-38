@@ -1,0 +1,31 @@
+
+// Square root of perfect squares
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+int flag=0,num,i;
+printf("Enter the number \n");
+scanf("%d",&num);
+
+if(num==0 || num==1){
+   flag=1;
+}
+
+for(i=2; i<=num/2; i++){
+   if(num==i*i){
+      printf("%d",i);
+      flag++;
+   }
+}
+
+
+if(flag==0){
+   printf("%d",flag);
+}  
+
+    return 0;
+}
