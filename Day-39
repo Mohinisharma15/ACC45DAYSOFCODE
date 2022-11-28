@@ -1,0 +1,42 @@
+
+// Checking if the array is sorted or not
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+int arr[50],i,p=0,num;
+printf("Enter the number of elements in the array \n");
+scanf("%d",&num);
+
+printf("Enter the elements in the array \n");
+for(i=0; i<num; i++){
+   scanf("%d",&arr[i]);
+}
+
+if(arr[0]>=arr[1]){
+   for(i=1; i<num-1; i++){
+      if(arr[i]>=arr[i+1]){
+         p++;
+      }
+   }
+}
+   if(arr[0]<=arr[1] && p!=num-2){
+      for(i=1; i<num-1; i++){
+         if(arr[i]<=arr[i+1]){
+         p++;
+      }
+      }
+   }
+
+if(p==num-2){
+   printf("Array is sorted ");
+}
+else{
+   printf("Array is not sorted ");
+}
+
+    return 0;
+}
