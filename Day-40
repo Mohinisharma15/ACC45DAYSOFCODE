@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main(){
+int h,m,s;
+start:
+printf("Enter the time in h:m:s\n");
+scanf("%d%d%d",&h,&m,&s);
+if(h<0 || h>23  || m<0 || m>59 || s<0 || s>59){
+    printf("Enter a valid time format \n");
+    goto start;
+}
+
+printf("Input time is correct \n");
+printf(" The time is %d:%d:%d",h,m,s);
+
+return 0;
+
+}
