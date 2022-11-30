@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+// Power of a number by for loop
+
+int num,power,fact=1,i;
+printf("Enter the num and the power \n");
+scanf("%d%d",&num,&power);
+for(i=1; i<=power; i++){
+    fact=fact*num;
+}
+printf("%d",fact);
+
+    return 0;
+}
