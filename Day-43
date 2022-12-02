@@ -1,0 +1,30 @@
+
+// length of string using pointer and strlen function
+
+#include <stdio.h>
+#include <string.h>
+void stri(char *str){
+    int i=0;
+    while(*(str+i)!='\0'){
+        i++;
+    }
+      printf("%d",i);
+
+    
+}
+
+int main()
+{
+    char str[20];
+    int i,length;
+    printf("Enter a string without spaces \n");
+    scanf("%s",str);
+    length=strlen(str);
+    stri(str);
+    
+    printf("The length of string by strlen is %d",length);
+
+
+    return 0;
+}
+
